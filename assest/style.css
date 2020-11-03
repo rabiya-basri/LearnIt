@@ -1,0 +1,250 @@
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+
+#pageContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+#mastHeadContainer{
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 7px 16px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e8e8e8;
+    background-color:#212529;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+#mastHeadContainer button:not(.searchButton) 
+#mastHeadContainer .rightIcons img{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+}
+#mastHeadContainer .rightIcons {
+    height: 100%;
+}
+#mastHeadContainer button img{
+    width: 100%;
+    
+}
+#mastHeadContainer .navShowHide {
+    background-color: transparent;
+    border: none;
+}
+#mastHeadContainer .logoContainer{
+    width: 150px;
+    font-weight: 600;
+    color: white;
+    font-family: "Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+#mastHeadContainer .logoContainer img{
+    height: 30px;
+    margin-left: 8px;
+   
+}
+
+#sideNavContainer {
+    width: 240px;
+    background-color: #f5f5f5;
+    padding-top: 56px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainSectionContainer{
+    padding-top: 56px;
+    display: flex;
+}
+#mainSectionContainer.leftpadding{
+    padding-left: 240px;
+}
+
+#mainContentContainer{
+    padding: 10px 30px;
+    display: flex;
+    flex: 1;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+#mastHeadContainer .searchBarContainer{
+    margin: 0 40px;
+    flex: 1;
+    display: flex;
+}
+#mastHeadContainer .searchBarContainer form{
+    flex: 1;
+    display: flex;
+}
+#mastHeadContainer .searchBarContainer .searchBar{
+    flex: 1;
+    max-width: 600px;
+    color: #111;
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: 100;
+    border: 1px solid #ccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: none;
+    height: 32px;
+    box-shadow: #eee 0px 1px 2px 0px inset;
+}
+#mastHeadContainer .searchBarContainer .searchButton{
+    height: 32px;
+    background-color: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: pointer;
+    width: 65px;
+}
+#mastHeadContainer .searchBarContainer .searchButton img{
+    height: 20px;
+    width: 20px;
+}
+.column{
+    flex-grow: 1;
+    background-color: #fff;
+    min-height: 300px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+}
+
+.videoInfo{
+    width: 100%;
+padding: 20px 0 8px 0;
+}       
+.bottomSection{
+    display: flex;
+}
+
+.videoInfo .bottomSection .viewCount{
+    color: rgb(17,17,17,0.6);
+    font-size: 16px;
+    flex: 1;
+}
+.videoInfo .bottomSection .controls{
+    flex: 1;
+    text-align: right;
+}
+.likeButton {
+    padding: 0;
+background-color: transparent;
+border: none;
+font-weight: 500;
+font-size: 13px;
+color: rgb(17,17,17,0.4);
+cursor: pointer;
+}
+.dislikeButton{
+    padding: 0;
+background-color: transparent;
+border: none;
+font-weight: 500;
+font-size: 13px;
+color: rgb(17,17,17,0.4);
+cursor: pointer;
+}
+.likeButton img{
+    height: 20px;
+    width: 20px;
+    margin: 4px 8px 8px 8px;
+}
+.dislikeButton img{
+    height: 20px;
+    width: 20px;
+    margin: 4px 8px 8px 8px;
+}
+
+.secondaryInfo .topRow{
+    display: flex;
+    margin-bottom: 12px;
+}
+.secondaryInfo .topRow .profilePicture{
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.secondaryInfo .topRow .uploadInfo{
+    flex: 1;
+display: flex;
+flex-direction: column;
+margin-right: 10px;
+}
+.secondaryInfo .topRow .uploadInfo .date{
+    color: rgb(17,17,17,0.6);
+    font-size: 13px;
+    font-weight: 400;
+}
+.uploadInfo .owner a{
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+.secondaryInfo .descriptionContainer{
+    margin-left: 64px;
+    max-width: 615px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+
+}
+.secondaryInfo{
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+}
+.secondaryInfo .topRow .button{
+    padding: 6px 15px;
+cursor: pointer;
+font-weight: 500;
+border-radius: 2px;
+border: none;
+font-size: 16px;
+}
+
+.secondaryInfo .topRow .subscribeButtonContainer
+.secondaryInfo .topRow .editVideoButtonContainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscribeButtonContainer .subscribe{
+    background-color: #ff0000;
+    color: white;
+}
+.subscribeButtonContainer .unsubscribe{
+    background-color: #eee;
+    color: rgb(17,17,17,0.6);
+}
+.editVideoButtonContainer .edit{
+    background-color: #2692eb;
+    color: #fff;
+}
+
+
